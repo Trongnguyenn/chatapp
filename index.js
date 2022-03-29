@@ -1,8 +1,9 @@
+
 const express = require('express')
-const app = express()
+const app1 = express()
 
 const http = require('http')
-const server = http.createServer(app)
+const server = http.createServer(app1)
 
 const{
     Server
@@ -10,7 +11,7 @@ const{
 
 const io = new Server (server)
 
-app.get('/', (req, res) =>  {
+app1.get('/', (req, res) =>  {
     res.sendFile(__dirname+ '/index.html')
 })
 
@@ -22,7 +23,7 @@ io.on('connection', (socket) => {
 }
 )
 
-server.listen(3333, () => {
-    console.log('listening on port 3333')
+server.listen(3000, () => {
+    console.log('listening on port 3000')
 })
 

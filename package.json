@@ -5,9 +5,12 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon index.js"
+    
   },
   "dependencies": {
     "express": "^4.17.3",
+    "firebase": "^9.6.10",
+    "gh-pages": "^3.2.3",
     "socket.io": "^4.4.1"
   },
   "devDependencies": {
